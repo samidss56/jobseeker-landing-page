@@ -1,0 +1,536 @@
+/* GLOBALS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* MAIN */
+
+.main-wrapper {
+  width: 85%;
+  margin: 3rem auto;
+  background-color: white;
+}
+
+/* NAVBAR */
+
+.navbar-wrapper {
+  border: 2px solid #6c63ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 40px;
+  position: sticky;
+  top: 10;
+  backdrop-filter: blur(5px);
+}
+
+.navbar-logo {
+  color: #6c63ff;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.navbar-menu a {
+  cursor: pointer;
+  color: #6f6f6f;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s;
+}
+
+.navbar-menu a:hover {
+  color: #6c63ff;
+}
+
+.navbar-menu a:hover::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #6c63ff;
+  right: 0;
+  bottom: -10px;
+  color: #6c63ff;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.close-toggle-wrapper {
+  position: fixed;
+  right: 10px;
+}
+
+.navbar-toggle-menu {
+  position: fixed;
+  top: 130px;
+  right: 0;
+  width: 170px;
+  z-index: 999;
+  background-color: #6c63ff;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.toggle-menu-wrapper {
+  padding-top: 30px;
+}
+.navbar-toggle-menu a {
+  color: white;
+}
+
+.navbar-toggle-menu li {
+  width: 100%;
+}
+
+.navbar-toggle-menu a {
+  width: 100%;
+}
+
+/* HERO */
+
+.hero-section {
+  background-color: white;
+}
+
+.hero-wrapper {
+  display: flex;
+  margin: 40px auto;
+  padding-inline-start: 20px;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text-wrapper {
+  margin-right: auto;
+  place-self: center;
+  width: 50%;
+}
+
+.hero-text-wrapper h1 {
+  max-width: 42rem;
+  margin-bottom: 1rem;
+  font-size: 36px;
+  line-height: 2.5rem;
+  font-weight: 800;
+  color: #6c63ff;
+}
+
+.hero-text-wrapper p {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: rgb(156 163 175);
+}
+
+.hero-text-wrapper span {
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+.hero-text-wrapper a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #6c63ff;
+  border-radius: 8px;
+  border: solid 2px #6c63ff;
+  transition: 0.5s;
+}
+
+.hero-text-wrapper a:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.hero-image-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-wrapper img {
+  width: 300px;
+  height: auto;
+}
+
+/* JOBS */
+
+.jobs-section {
+  padding: 20px;
+}
+
+.jobs-section h2 {
+  color: #6c63ff;
+}
+
+.jobs-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.jobs-card {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(159, 154, 154, 0.4);
+  transition: 0.5s;
+}
+
+.jobs-card h4 {
+  margin-top: -5px;
+  font-size: 16px;
+  color: rgb(37 43 54);
+}
+
+.jobs-card h6 {
+  margin-top: -20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.jobs-card p {
+  font-size: 13px;
+  color: #959595;
+  padding-top: 20px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.jobs-company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jobs-company img {
+  width: 10%;
+}
+
+.jobs-company span {
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.jobs-card button {
+  border: 2px;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobs-card button:hover {
+  color: #6c63ff;
+  cursor: pointer;
+}
+
+.jobs-card:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.jobs-card:hover h4,
+.jobs-card:hover h6,
+.jobs-card:hover p,
+.jobs-card:hover .jobs-company span {
+  color: white;
+}
+
+/* ABOUT */
+
+.about-text-wrapper {
+  width: 50%;
+}
+
+.about-text-wrapper h2 {
+  color: #6c63ff;
+}
+
+.about-text-wrapper p {
+  color: rgb(156 163 175);
+  font-weight: 300;
+}
+
+/* TESTIMONIALS */
+
+.testi-section {
+  margin: 4rem 2rem 0;
+}
+
+.testi-section h1 {
+  color: #6c63ff;
+}
+
+.testi-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testi-card {
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(159, 154, 154, 0.4);
+  padding: 1.5rem;
+  transition: 0.5s;
+}
+
+.testi-card:hover {
+  background-color: #6c63ff;
+}
+
+.testi-card:hover span,
+.testi-card:hover p {
+  color: white;
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.image-wrapper {
+  padding: 4px;
+  border-radius: 12.8px;
+  height: 40px;
+  display: flex;
+}
+
+.image-wrapper img {
+  border-radius: 50%;
+}
+
+.profile-wrapper span {
+  font-size: 16px;
+  color: #282e38;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.testi-card p {
+  font-size: 13px;
+  color: #343943;
+  font-weight: 600;
+}
+
+/* FEEDBACK */
+
+.feedback-wrapper {
+  display: flex;
+  box-shadow: 1px 1px 2px 2px rgba(159, 154, 154, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5rem 0;
+}
+
+.input-wrapper {
+  width: 50%;
+  flex-direction: column;
+  margin: auto 0;
+  padding: 0 10px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-form input {
+  width: 90%;
+  border-radius: 10px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.input-form input:focus {
+  outline: none;
+}
+
+.input-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-wrapper button {
+  border-radius: 10px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.5s;
+  width: 30%;
+}
+
+.form-wrapper button:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.content-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.content-wrapper h2 {
+  text-align: center;
+  color: #6c63ff;
+}
+
+.content-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content-image-wrapper img {
+  width: 80%;
+}
+
+/* FOOTER */
+
+.footer-section {
+  background-color: #6c63ff;
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  gap: 40px;
+  display: flex;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-section h2 {
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer-item p {
+  font-size: 18px;
+  color: white;
+  opacity: 0.7;
+  line-height: 28px;
+}
+
+.footer-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.footer-item-list {
+  display: grid;
+  gap: 12px;
+}
+
+.footer-item-list li {
+  color: white;
+  list-style: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer-item-list li:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggler {
+    cursor: pointer;
+    display: block;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-text-wrapper {
+    width: 100%;
+  }
+  .about-text-wrapper {
+    width: 100%;
+  }
+  .testi-card-wrapper {
+    flex-direction: column;
+  }
+
+  .feedback-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
