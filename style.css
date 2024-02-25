@@ -100,6 +100,7 @@ li {
 .toggle-menu-wrapper {
   padding-top: 30px;
 }
+
 .navbar-toggle-menu a {
   color: white;
 }
@@ -458,6 +459,7 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .footer-item p {
   font-size: 18px;
   color: white;
@@ -482,6 +484,7 @@ li {
   list-style: none;
   opacity: 0.7;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .footer-item-list li:hover {
@@ -511,9 +514,11 @@ li {
   .hero-text-wrapper {
     width: 100%;
   }
+
   .about-text-wrapper {
     width: 100%;
   }
+
   .testi-card-wrapper {
     flex-direction: column;
   }
@@ -528,10 +533,12 @@ li {
 
   .content-wrapper {
     width: 100%;
+    padding: 0;
   }
 
   .footer-section {
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 2rem;
   }
 }
